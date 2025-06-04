@@ -36,4 +36,12 @@ console.log("1"+2+2); //we expect 14 but we get 122
 
 console.log(1+2+"2") // but for this 32 will be the output 
 
+//comparison operator
 
+//comparison should me mafe between same data types
+
+//comparison operators like >,<,>=,<= works diffrently in comparison to the equality check operator == in js
+
+// === (strict check) it check compatible datatypes also whereas simple check == converts incompatible data type itself and then checks
+console.log("2" == 2) // for this true will be the output
+console.log("2" === 2) // false will be the output for this
