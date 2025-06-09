@@ -17,7 +17,7 @@
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId) // this will return false 
+//console.log(id === anotherId) // this will return false 
 
 const heros = ['thor',"stark","ned"]
 
@@ -31,14 +31,40 @@ let myObj =
 //function can be treated as variable in JS
 
 const myFunction = function(){
-    console.log("hello world")
+    //console.log("hello world")
 }
 
-console.log(typeof myFunction)
+//console.log(typeof myFunction)
 
 //when we use typeof for null it produces object as output 
 //datatype of non primitive is referred as object only but if use typeof with a function then showcases the output as function which is in actual a object function only 
 
-console.log(typeof myFunction)
+//console.log(typeof myFunction)
 
 //datatype of symbol is symbol
+
+// +++++++++++++++++++++++++++++++
+
+// memory types availabe in js are heap and stack
+
+//Stack (primitive) (whenever stack is used for variable we get copy of that variable ), Heap(non primitive type)(if a variable is declared in heap we get direct refrence to that variable)
+
+let myName = " bochan"
+let anothername = myName
+anothername = "kasukabe"
+console.log(anothername);
+console.log(myName);
+
+
+let userOne = {
+    email : "user@yahoo.com",
+    upi: "user@ybl"
+}
+
+
+let userTwo = userOne;
+
+userTwo.email = "user2@yahoo.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
