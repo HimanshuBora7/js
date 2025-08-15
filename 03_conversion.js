@@ -8,8 +8,8 @@ let ValueInNumber = Number(score);
 
 // console.log(typeof ValueInNumber);
 
-let score1 = "3abc32";
-let ValueInScore1 = Number(score1);
+// let score1 = "3abc32";
+// let ValueInScore1 = Number(score1);
 // console.log(ValueInScore1);
 
 //"33"=> 33 if variable holds a valid number and conversion is possible them we get the right conversion

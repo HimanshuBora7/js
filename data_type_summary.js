@@ -15,10 +15,10 @@
 //symbol example
 const id = Symbol("123");
 const anotherId = Symbol("123");
-console.log(id === anotherId); // this will return false
-console.log(id);
-console.log(anotherId);
-console.table([id, anotherId]);
+// console.log(id === anotherId); // this will return false
+// console.log(id);
+// console.log(anotherId);
+// console.table([id, anotherId]);
 
 const heros = ["thor", "stark", "ned"];
 
@@ -27,14 +27,18 @@ let myObj = {
   name: "doges",
   age: 19,
 };
-
+myObj.name = "dogesh";
+// console.log(myObj.name);
 //function can be treated as variable in JS
 
-const myFunction = function () {
-  //console.log("hello world")
+const myFunction = function (a, b) {
+  // console.log("hello world");
+  // console.log(a + b);
 };
 
-//console.log(typeof myFunction)
+// myFunction(3, "hello");
+
+// console.log(typeof myFunction);
 
 //when we use typeof for null it produces object as output
 //datatype of non primitive is referred as object only but if use typeof with a function then showcases the output as function which is in actual a object function only
@@ -42,7 +46,8 @@ const myFunction = function () {
 //console.log(typeof myFunction)
 
 //datatype of symbol is symbol
-
+// a = 3;
+// console.log("type of number data type", typeof BigInt);
 // +++++++++++++++++++++++++++++++
 
 // memory types availabe in js are heap and stack
