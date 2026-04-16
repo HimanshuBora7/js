@@ -48,3 +48,48 @@ document
     let taskLIst = document.getElementById("taskList");
     taskLIst.lastElementChild.remove();
   });
+
+// example 6
+document
+  .getElementById("clickMeButton")
+  .addEventListener("dblclick", function () {
+    alert("interacted!!");
+  });
+
+//example7
+
+document.getElementById("teaList").addEventListener("click", function (event) {
+  if (event.target && event.target.matches(".teaItem")) {
+    console.log(event.target.innerText);
+  }
+});
+
+//example8
+document
+  .getElementById("feedbackForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    let feedBack = document.getElementById("feedbackInput").value;
+    console.log(feedBack);
+    document.getElementById("feedbackDisplay").textContent = feedBack;
+  });
+
+//example 9
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("domStatus").textContent = "dom fully loaded";
+});
+
+//example 10
+let count1 = 0;
+document
+  .getElementById("toggleHighlight")
+  .addEventListener("click", function () {
+    if (count1 % 2 == 0) {
+      document.getElementById("descriptionText").style.color = "plum";
+      count1++;
+    } else {
+      document.getElementById("descriptionText").style.color = "white";
+      count1++;
+    }
+  });
